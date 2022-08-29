@@ -6,7 +6,7 @@ namespace CityInfo.API.Controllers
 {
     [Route("api/cities/{cityId}/pointsofinterest")]
     [ApiController]
-    public class PointOfInterestDto : ControllerBase
+    public class PointOfInterestDtoController : ControllerBase
     {
         [HttpGet]
         public ActionResult<IEnumerable<CityDto>> GetPointsOfInterrest(int cityId)
@@ -18,7 +18,7 @@ namespace CityInfo.API.Controllers
             return Ok(city.PointOfInterest);
         }
 
-        [HttpGet("{pointsofinterestId}")]
+        [HttpGet("{pointsofinterestId}",Name= "GetPointOfInterest")]
         public ActionResult<IEnumerable<PointOfInterestDto>> GetPointOfInterest(int cityId, int pointsofinterestId)
         {
             var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
@@ -29,6 +29,37 @@ namespace CityInfo.API.Controllers
                 return NotFound();
 
             return Ok(pointOfInterest);
+        }
+        [HttpPost]
+        public ActionResult<PointOfInterestDto> CreatePointOfInterest(int cityId, PointOfInterestOfCreationDto pointOfInterest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            if (city == null)
+            {
+                return NotFound();
+            };
+            var maxPoniOfInterest = CitiesStoreData.Current.Cities.SelectMany(c => c.PointOfInterest).Max(p => p.Id);
+            var finalPointOfinterest = new PointOfInterestDto()
+            {
+                Id = ++maxPoniOfInterest,
+                Name = pointOfInterest.Name,
+                Description = pointOfInterest.Description
+            };
+
+            city.PointOfInterest.Add(finalPointOfinterest);
+
+            return CreatedAtRoute(
+                "GetPointOfInterest",
+                new
+                {
+                    cityId = cityId,
+                    pointOfInterest = finalPointOfinterest.Id
+                },
+                finalPointOfinterest);
         }
     }
 }
