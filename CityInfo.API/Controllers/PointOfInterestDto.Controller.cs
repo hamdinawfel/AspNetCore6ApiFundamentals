@@ -1,5 +1,6 @@
 ﻿using CityInfo.API.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers
@@ -8,14 +9,33 @@ namespace CityInfo.API.Controllers
     [ApiController]
     public class PointOfInterestDtoController : ControllerBase
     {
+        private readonly ILogger<PointOfInterestDtoController> _logger;
+
+        public PointOfInterestDtoController(ILogger<PointOfInterestDtoController> logger)
+        {
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<CityDto>> GetPointsOfInterrest(int cityId)
         {
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-            if(city == null)
-                return NotFound();
+            try
+            {
+                throw new Exception("Exeption sample");
+                var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                if (city == null)
+                {
+                    _logger.LogInformation("the city id {0} not found", cityId);
+                    return NotFound();
+                }
 
-            return Ok(city.PointOfInterest);
+                return Ok(city.PointOfInterest);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical("City with {0} not found", cityId, ex);
+                return StatusCode(500, "A problem happened while handle your request");
+            }
         }
 
         [HttpGet("{pointsofinterestId}",Name= "GetPointOfInterest")]
@@ -81,6 +101,64 @@ namespace CityInfo.API.Controllers
 
             updatedPointOfInterest.Name = pointOfInterest.Name;
             updatedPointOfInterest.Description = pointOfInterest.Description;
+
+            return NoContent();
+        }
+
+        [HttpPatch("{pointOfInterestId}")]
+        public ActionResult<PointOfInterestDto> PartiallyUpdatePointOfInterrest(int cityId, int pointOfInterestId, JsonPatchDocument<PointOfInterestOfUpdateDto> patchDocument)
+        {
+            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            var updatedPointOfInterest = city.PointOfInterest.FirstOrDefault(p => p.Id == pointOfInterestId);
+
+            if (updatedPointOfInterest == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestToPach = new PointOfInterestOfUpdateDto()
+            {
+                Name = updatedPointOfInterest.Name,
+                Description = updatedPointOfInterest.Description
+            };
+
+            patchDocument.ApplyTo(pointOfInterestToPach, ModelState);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            updatedPointOfInterest.Name = pointOfInterestToPach.Name;
+            updatedPointOfInterest.Description = pointOfInterestToPach.Description;
+
+            return NoContent();
+
+        }
+
+        [HttpDelete("{pointOfInterestId}")]
+        public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
+        {
+            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            var updatedPointOfInterest = city.PointOfInterest.FirstOrDefault(p => p.Id == pointOfInterestId);
+
+            if (updatedPointOfInterest == null)
+            {
+                return NotFound();
+            }
+
+            city.PointOfInterest.Remove(updatedPointOfInterest);
 
             return NoContent();
         }
