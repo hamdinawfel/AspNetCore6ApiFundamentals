@@ -5,7 +5,7 @@ namespace CityInfo.API.Models
     public class CitiesStoreData
     {
         public List<CityDto> Cities { get; set; }
-        public static CitiesStoreData Current { get; } = new CitiesStoreData();
+        //public static CitiesStoreData Current { get; } = new CitiesStoreData();
 
         public CitiesStoreData()
         {

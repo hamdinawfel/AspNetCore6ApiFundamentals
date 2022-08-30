@@ -1,4 +1,5 @@
-﻿using CityInfo.API.Models;
+﻿using CityInfo.API.LocalMailService;
+using CityInfo.API.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -10,13 +11,15 @@ namespace CityInfo.API.Controllers
     public class PointOfInterestDtoController : ControllerBase
     {
         private readonly ILogger<PointOfInterestDtoController> _logger;
-        private readonly LocalMailService.LocalMailService _mailService;
+        private readonly IMailService _mailService;
+        private readonly CitiesStoreData _citiesStoreData;
 
 
-        public PointOfInterestDtoController(ILogger<PointOfInterestDtoController>? logger , LocalMailService.LocalMailService mailService)
+        public PointOfInterestDtoController(ILogger<PointOfInterestDtoController>? logger , IMailService mailService ,CitiesStoreData citiesStoreData)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _mailService = mailService;
+            _citiesStoreData = citiesStoreData;
         }
 
         [HttpGet]
@@ -25,7 +28,7 @@ namespace CityInfo.API.Controllers
             try
             {
                 throw new Exception("Exeption sample");
-                var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
                 if (city == null)
                 {
                     _logger.LogInformation("the city id {0} not found", cityId);
@@ -44,7 +47,7 @@ namespace CityInfo.API.Controllers
         [HttpGet("{pointsofinterestId}",Name= "GetPointOfInterest")]
         public ActionResult<IEnumerable<PointOfInterestDto>> GetPointOfInterest(int cityId, int pointsofinterestId)
         {
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
             if (city == null)
                 return NotFound();
             var pointOfInterest = city.PointOfInterest.FirstOrDefault(p => p.Id == pointsofinterestId);
@@ -60,12 +63,12 @@ namespace CityInfo.API.Controllers
             {
                 return BadRequest();
             }
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
             if (city == null)
             {
                 return NotFound();
             };
-            var maxPoniOfInterest = CitiesStoreData.Current.Cities.SelectMany(c => c.PointOfInterest).Max(p => p.Id);
+            var maxPoniOfInterest = _citiesStoreData.Cities.SelectMany(c => c.PointOfInterest).Max(p => p.Id);
             var finalPointOfinterest = new PointOfInterestDto()
             {
                 Id = ++maxPoniOfInterest,
@@ -88,7 +91,7 @@ namespace CityInfo.API.Controllers
         public ActionResult<PointOfInterestDto> UpdatePonitOfInterest(int cityId,int pointOfInterestId,
             PointOfInterestOfUpdateDto pointOfInterest)
         {
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
@@ -111,7 +114,7 @@ namespace CityInfo.API.Controllers
         [HttpPatch("{pointOfInterestId}")]
         public ActionResult<PointOfInterestDto> PartiallyUpdatePointOfInterrest(int cityId, int pointOfInterestId, JsonPatchDocument<PointOfInterestOfUpdateDto> patchDocument)
         {
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
@@ -147,7 +150,7 @@ namespace CityInfo.API.Controllers
         [HttpDelete("{pointOfInterestId}")]
         public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
         {
-            var city = CitiesStoreData.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesStoreData.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {

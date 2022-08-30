@@ -1,6 +1,7 @@
 
-
 using CityInfo.API.LocalMailService;
+using CityInfo.API.Models;
+using CityInfo.API.Services;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -25,10 +26,13 @@ builder.Services.AddControllers(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 //builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
-
-builder.Services.AddTransient<LocalMailService>();
-
+#if DEBUG
+builder.Services.AddTransient<IMailService, LocalMailService>();
+#endif
+builder.Services.AddTransient<IMailService, CloudMailService>();
+builder.Services.AddSingleton<CitiesStoreData>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

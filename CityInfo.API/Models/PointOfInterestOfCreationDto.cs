@@ -10,6 +10,4 @@ namespace CityInfo.API.Models
         [MaxLength(200)]
         public string Description { get; set; }
     }
-
-    
 }
