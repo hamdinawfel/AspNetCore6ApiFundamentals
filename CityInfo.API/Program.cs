@@ -1,5 +1,6 @@
 
 
+using CityInfo.API.LocalMailService;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -25,6 +26,8 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
+
+builder.Services.AddTransient<LocalMailService>();
 
 var app = builder.Build();
 

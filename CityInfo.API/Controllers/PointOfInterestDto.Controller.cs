@@ -10,10 +10,13 @@ namespace CityInfo.API.Controllers
     public class PointOfInterestDtoController : ControllerBase
     {
         private readonly ILogger<PointOfInterestDtoController> _logger;
+        private readonly LocalMailService.LocalMailService _mailService;
 
-        public PointOfInterestDtoController(ILogger<PointOfInterestDtoController> logger)
+
+        public PointOfInterestDtoController(ILogger<PointOfInterestDtoController>? logger , LocalMailService.LocalMailService mailService)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mailService = mailService;
         }
 
         [HttpGet]
@@ -159,7 +162,7 @@ namespace CityInfo.API.Controllers
             }
 
             city.PointOfInterest.Remove(updatedPointOfInterest);
-
+            _mailService.Send("Point of interest deleted", $"Point of interest {updatedPointOfInterest.Name} with id {updatedPointOfInterest.Id} was deleted");
             return NoContent();
         }
     }
