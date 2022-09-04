@@ -603,3 +603,599 @@ System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport
 2022-08-30 16:36:28.869 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
 2022-08-30 16:36:28.874 +01:00 [DBG] Connection id "0HMKAJLGVHLE4" completed keep alive response.
 2022-08-30 16:36:28.876 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 157.1238ms
+2022-08-30 17:05:38.831 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:05:38.973 +01:00 [DBG] Hosting starting
+2022-08-30 17:05:39.144 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:05:39.224 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:05:39.226 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:05:39.228 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:05:39.229 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:05:39.231 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:05:39.232 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:05:39.233 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:05:39.234 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:05:39.235 +01:00 [DBG] Hosting started
+2022-08-30 17:05:39.545 +01:00 [DBG] Connection id "0HMKAK5TQJPNC" received FIN.
+2022-08-30 17:05:39.562 +01:00 [DBG] Connection id "0HMKAK5TQJPNC" accepted.
+2022-08-30 17:05:39.562 +01:00 [DBG] Connection id "0HMKAK5TQJPND" accepted.
+2022-08-30 17:05:39.566 +01:00 [DBG] Connection id "0HMKAK5TQJPNC" started.
+2022-08-30 17:05:39.566 +01:00 [DBG] Connection id "0HMKAK5TQJPND" started.
+2022-08-30 17:05:39.596 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:05:39.697 +01:00 [DBG] Connection 0HMKAK5TQJPND established using the following protocol: "Tls12"
+2022-08-30 17:05:39.706 +01:00 [DBG] Connection id "0HMKAK5TQJPNC" stopped.
+2022-08-30 17:05:39.712 +01:00 [DBG] Connection id "0HMKAK5TQJPNC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:05:39.806 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:05:39.865 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:05:40.067 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:05:40.487 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:05:40.489 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:05:40.489 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:05:40.495 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 697.6422ms
+2022-08-30 17:05:40.501 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 11.9081ms
+2022-08-30 17:05:40.567 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.2493ms
+2022-08-30 17:05:40.961 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:05:41.261 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 300.6157ms
+2022-08-30 17:05:42.753 +01:00 [DBG] Connection id "0HMKAK5TQJPNE" accepted.
+2022-08-30 17:05:42.755 +01:00 [DBG] Connection id "0HMKAK5TQJPNE" received FIN.
+2022-08-30 17:05:42.755 +01:00 [DBG] Connection id "0HMKAK5TQJPNE" started.
+2022-08-30 17:05:42.755 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" accepted.
+2022-08-30 17:05:42.761 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:05:42.762 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" started.
+2022-08-30 17:05:42.772 +01:00 [DBG] Connection id "0HMKAK5TQJPNE" stopped.
+2022-08-30 17:05:42.776 +01:00 [DBG] Connection id "0HMKAK5TQJPNE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:05:42.783 +01:00 [DBG] Connection 0HMKAK5TQJPNF established using the following protocol: "Tls12"
+2022-08-30 17:05:42.798 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7230/api/cities - -
+2022-08-30 17:05:42.802 +01:00 [DBG] The request path  does not match the path filter
+2022-08-30 17:05:42.839 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-08-30 17:05:42.846 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-08-30 17:05:42.849 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-08-30 17:05:42.852 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-08-30 17:05:42.866 +01:00 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityDto]] GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2022-08-30 17:05:42.870 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:05:42.872 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:05:42.875 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:05:42.880 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:05:42.882 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:05:42.885 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-08-30 17:05:42.888 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-08-30 17:05:42.892 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-08-30 17:05:42.898 +01:00 [DBG] No information found on request to perform content negotiation.
+2022-08-30 17:05:42.899 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-08-30 17:05:42.900 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-08-30 17:05:42.902 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-08-30 17:05:42.904 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-30 17:05:43.097 +01:00 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 205.6809ms
+2022-08-30 17:05:43.100 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-08-30 17:05:43.101 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" completed keep alive response.
+2022-08-30 17:05:43.102 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7230/api/cities - - - 200 668 application/json;+charset=utf-8 303.8380ms
+2022-08-30 17:07:53.342 +01:00 [DBG] Connection id "0HMKAK5TQJPND" is closing.
+2022-08-30 17:07:53.352 +01:00 [DBG] Connection id "0HMKAK5TQJPND" is closed. The last processed stream ID was 7.
+2022-08-30 17:07:53.355 +01:00 [DBG] Connection id "0HMKAK5TQJPND" received FIN.
+2022-08-30 17:07:53.356 +01:00 [DBG] Connection id "0HMKAK5TQJPND" stopped.
+2022-08-30 17:07:53.358 +01:00 [DBG] Connection id "0HMKAK5TQJPND" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:07:54.353 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" disconnecting.
+2022-08-30 17:07:54.354 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" stopped.
+2022-08-30 17:07:54.356 +01:00 [DBG] Connection id "0HMKAK5TQJPNF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:21:54.214 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:21:54.358 +01:00 [DBG] Hosting starting
+2022-08-30 17:21:54.529 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:21:54.604 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:21:54.606 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:21:54.607 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:21:54.609 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:21:54.611 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:21:54.612 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:21:54.614 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:21:54.616 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:21:54.617 +01:00 [DBG] Hosting started
+2022-08-30 17:21:54.741 +01:00 [DBG] Connection id "0HMKAKF0EQ4M0" received FIN.
+2022-08-30 17:21:54.751 +01:00 [DBG] Connection id "0HMKAKF0EQ4M0" accepted.
+2022-08-30 17:21:54.754 +01:00 [DBG] Connection id "0HMKAKF0EQ4M0" started.
+2022-08-30 17:21:54.769 +01:00 [DBG] Connection id "0HMKAKF0EQ4M1" accepted.
+2022-08-30 17:21:54.791 +01:00 [DBG] Connection id "0HMKAKF0EQ4M1" started.
+2022-08-30 17:21:54.805 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:21:54.884 +01:00 [DBG] Connection id "0HMKAKF0EQ4M0" stopped.
+2022-08-30 17:21:54.886 +01:00 [DBG] Connection id "0HMKAKF0EQ4M0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:21:54.898 +01:00 [DBG] Connection 0HMKAKF0EQ4M1 established using the following protocol: "Tls12"
+2022-08-30 17:21:54.966 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:21:55.006 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:21:55.145 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:21:55.346 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:21:55.346 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:21:55.347 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:21:55.354 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 393.5564ms
+2022-08-30 17:21:55.354 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 7.5465ms
+2022-08-30 17:21:55.397 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.6468ms
+2022-08-30 17:21:55.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:21:55.700 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.5600ms
+2022-08-30 17:22:12.933 +01:00 [DBG] Connection id "0HMKAKF0EQ4M2" accepted.
+2022-08-30 17:22:12.934 +01:00 [DBG] Connection id "0HMKAKF0EQ4M2" received FIN.
+2022-08-30 17:22:12.935 +01:00 [DBG] Connection id "0HMKAKF0EQ4M2" started.
+2022-08-30 17:22:12.936 +01:00 [DBG] Connection id "0HMKAKF0EQ4M3" accepted.
+2022-08-30 17:22:12.939 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:22:12.941 +01:00 [DBG] Connection id "0HMKAKF0EQ4M3" started.
+2022-08-30 17:22:12.944 +01:00 [DBG] Connection id "0HMKAKF0EQ4M2" stopped.
+2022-08-30 17:22:12.947 +01:00 [DBG] Connection id "0HMKAKF0EQ4M2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:22:12.961 +01:00 [DBG] Connection 0HMKAKF0EQ4M3 established using the following protocol: "Tls12"
+2022-08-30 17:22:12.972 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:22:12.975 +01:00 [DBG] DELETE requests are not supported
+2022-08-30 17:22:12.998 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:22:13.002 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:22:13.006 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:22:13.010 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:22:13.029 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:22:13.032 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:22:13.033 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:22:13.035 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:22:13.040 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:22:13.041 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:22:13.045 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:22:13.049 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:22:13.058 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:22:13.061 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:22:13.064 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:22:13.065 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:22:13.068 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:22:13.070 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:22:13.073 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:22:13.075 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:22:13.077 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:22:13.079 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:22:13.081 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:22:13.084 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:22:13.094 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:22:13.101 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 51.368ms
+2022-08-30 17:22:13.103 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:22:13.106 +01:00 [DBG] Connection id "0HMKAKF0EQ4M3" completed keep alive response.
+2022-08-30 17:22:13.107 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 135.3826ms
+2022-08-30 17:23:22.154 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:23:22.516 +01:00 [DBG] Hosting starting
+2022-08-30 17:23:22.743 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:23:22.843 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:23:22.844 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:23:22.846 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:23:22.847 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:23:22.849 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:23:22.851 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:23:22.853 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:23:22.854 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:23:22.855 +01:00 [DBG] Hosting started
+2022-08-30 17:23:23.172 +01:00 [DBG] Connection id "0HMKAKFQQ577V" received FIN.
+2022-08-30 17:23:23.172 +01:00 [DBG] Connection id "0HMKAKFQQ5780" received FIN.
+2022-08-30 17:23:23.189 +01:00 [DBG] Connection id "0HMKAKFQQ5780" accepted.
+2022-08-30 17:23:23.189 +01:00 [DBG] Connection id "0HMKAKFQQ577V" accepted.
+2022-08-30 17:23:23.193 +01:00 [DBG] Connection id "0HMKAKFQQ5780" started.
+2022-08-30 17:23:23.195 +01:00 [DBG] Connection id "0HMKAKFQQ5781" accepted.
+2022-08-30 17:23:23.197 +01:00 [DBG] Connection id "0HMKAKFQQ577V" started.
+2022-08-30 17:23:23.201 +01:00 [DBG] Connection id "0HMKAKFQQ5781" started.
+2022-08-30 17:23:23.230 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:23.230 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:23.309 +01:00 [DBG] Connection id "0HMKAKFQQ577V" stopped.
+2022-08-30 17:23:23.309 +01:00 [DBG] Connection id "0HMKAKFQQ5780" stopped.
+2022-08-30 17:23:23.311 +01:00 [DBG] Connection id "0HMKAKFQQ577V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:23.312 +01:00 [DBG] Connection id "0HMKAKFQQ5780" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:23.313 +01:00 [DBG] Connection 0HMKAKFQQ5781 established using the following protocol: "Tls12"
+2022-08-30 17:23:23.400 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:23:23.450 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:23:23.618 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:23:23.876 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:23:23.876 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:23:23.879 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:23:23.887 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 493.8305ms
+2022-08-30 17:23:23.887 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 9.4557ms
+2022-08-30 17:23:23.939 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.4523ms
+2022-08-30 17:23:24.132 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:23:24.373 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 241.4076ms
+2022-08-30 17:23:25.764 +01:00 [DBG] Connection id "0HMKAKFQQ5782" accepted.
+2022-08-30 17:23:25.766 +01:00 [DBG] Connection id "0HMKAKFQQ5782" received FIN.
+2022-08-30 17:23:25.766 +01:00 [DBG] Connection id "0HMKAKFQQ5782" started.
+2022-08-30 17:23:25.767 +01:00 [DBG] Connection id "0HMKAKFQQ5783" accepted.
+2022-08-30 17:23:25.771 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:25.773 +01:00 [DBG] Connection id "0HMKAKFQQ5783" started.
+2022-08-30 17:23:25.777 +01:00 [DBG] Connection id "0HMKAKFQQ5782" stopped.
+2022-08-30 17:23:25.779 +01:00 [DBG] Connection id "0HMKAKFQQ5782" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:25.784 +01:00 [DBG] Connection 0HMKAKFQQ5783 established using the following protocol: "Tls12"
+2022-08-30 17:23:25.798 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:23:25.802 +01:00 [DBG] DELETE requests are not supported
+2022-08-30 17:23:25.837 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:23:25.845 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:23:25.849 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:25.855 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:25.885 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:23:25.889 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:23:25.891 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:23:25.893 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:23:25.896 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:23:25.899 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:23:25.901 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:23:25.905 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:23:25.915 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:23:25.919 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:23:25.921 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:25.923 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:25.925 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:23:25.927 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:25.933 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:23:25.935 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:23:25.938 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:25.939 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:25.941 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:23:25.942 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:25.952 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:23:25.961 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 53.974ms
+2022-08-30 17:23:25.964 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:25.966 +01:00 [DBG] Connection id "0HMKAKFQQ5783" completed keep alive response.
+2022-08-30 17:23:25.967 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 169.6705ms
+2022-08-30 17:23:48.138 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:23:48.286 +01:00 [DBG] Hosting starting
+2022-08-30 17:23:48.436 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:23:48.511 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:23:48.514 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:23:48.515 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:23:48.516 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:23:48.518 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:23:48.519 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:23:48.520 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:23:48.520 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:23:48.521 +01:00 [DBG] Hosting started
+2022-08-30 17:23:48.574 +01:00 [DBG] Connection id "0HMKAKG2CCHQ1" accepted.
+2022-08-30 17:23:48.576 +01:00 [DBG] Connection id "0HMKAKG2CCHQ2" accepted.
+2022-08-30 17:23:48.578 +01:00 [DBG] Connection id "0HMKAKG2CCHQ1" started.
+2022-08-30 17:23:48.578 +01:00 [DBG] Connection id "0HMKAKG2CCHQ2" started.
+2022-08-30 17:23:48.596 +01:00 [DBG] Connection id "0HMKAKG2CCHQ1" received FIN.
+2022-08-30 17:23:48.596 +01:00 [DBG] Connection id "0HMKAKG2CCHQ2" received FIN.
+2022-08-30 17:23:48.599 +01:00 [DBG] Connection id "0HMKAKG2CCHQ3" accepted.
+2022-08-30 17:23:48.603 +01:00 [DBG] Connection id "0HMKAKG2CCHQ3" started.
+2022-08-30 17:23:48.613 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:48.613 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:48.684 +01:00 [DBG] Connection id "0HMKAKG2CCHQ1" stopped.
+2022-08-30 17:23:48.684 +01:00 [DBG] Connection id "0HMKAKG2CCHQ2" stopped.
+2022-08-30 17:23:48.689 +01:00 [DBG] Connection id "0HMKAKG2CCHQ1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:48.690 +01:00 [DBG] Connection id "0HMKAKG2CCHQ2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:48.703 +01:00 [DBG] Connection 0HMKAKG2CCHQ3 established using the following protocol: "Tls12"
+2022-08-30 17:23:48.797 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:23:48.840 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:23:48.996 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:23:49.203 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:23:49.203 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:23:49.205 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:23:49.216 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 13.4049ms
+2022-08-30 17:23:49.216 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 426.3715ms
+2022-08-30 17:23:49.258 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.3131ms
+2022-08-30 17:23:49.360 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:23:49.563 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 202.7644ms
+2022-08-30 17:23:55.606 +01:00 [DBG] Connection id "0HMKAKG2CCHQ4" accepted.
+2022-08-30 17:23:55.607 +01:00 [DBG] Connection id "0HMKAKG2CCHQ4" received FIN.
+2022-08-30 17:23:55.608 +01:00 [DBG] Connection id "0HMKAKG2CCHQ4" started.
+2022-08-30 17:23:55.609 +01:00 [DBG] Connection id "0HMKAKG2CCHQ5" accepted.
+2022-08-30 17:23:55.612 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:23:55.614 +01:00 [DBG] Connection id "0HMKAKG2CCHQ5" started.
+2022-08-30 17:23:55.618 +01:00 [DBG] Connection id "0HMKAKG2CCHQ4" stopped.
+2022-08-30 17:23:55.620 +01:00 [DBG] Connection id "0HMKAKG2CCHQ4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:23:55.624 +01:00 [DBG] Connection 0HMKAKG2CCHQ5 established using the following protocol: "Tls12"
+2022-08-30 17:23:55.636 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:23:55.639 +01:00 [DBG] DELETE requests are not supported
+2022-08-30 17:23:55.664 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:23:55.669 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:23:55.671 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:55.674 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:55.697 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:23:55.701 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:23:55.702 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:23:55.703 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:23:55.705 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:23:55.709 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:23:55.715 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:23:55.718 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:23:55.727 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:23:55.731 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:23:55.733 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:55.734 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:55.735 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:23:55.737 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:23:55.741 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:23:55.744 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:23:55.747 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:55.748 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:55.750 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:23:55.751 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:23:55.759 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:23:55.766 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 47.2959ms
+2022-08-30 17:23:55.771 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:23:55.774 +01:00 [DBG] Connection id "0HMKAKG2CCHQ5" completed keep alive response.
+2022-08-30 17:23:55.776 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 140.0609ms
+2022-08-30 17:32:26.110 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:32:26.268 +01:00 [DBG] Hosting starting
+2022-08-30 17:32:26.483 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:32:26.579 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:32:26.580 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:32:26.582 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:32:26.583 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:32:26.584 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:32:26.586 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:32:26.588 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:32:26.590 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:32:26.590 +01:00 [DBG] Hosting started
+2022-08-30 17:32:27.025 +01:00 [DBG] Connection id "0HMKAKKSSMGIG" accepted.
+2022-08-30 17:32:27.025 +01:00 [DBG] Connection id "0HMKAKKSSMGIH" accepted.
+2022-08-30 17:32:27.026 +01:00 [DBG] Connection id "0HMKAKKSSMGIH" received FIN.
+2022-08-30 17:32:27.026 +01:00 [DBG] Connection id "0HMKAKKSSMGIG" received FIN.
+2022-08-30 17:32:27.029 +01:00 [DBG] Connection id "0HMKAKKSSMGIG" started.
+2022-08-30 17:32:27.029 +01:00 [DBG] Connection id "0HMKAKKSSMGIH" started.
+2022-08-30 17:32:27.031 +01:00 [DBG] Connection id "0HMKAKKSSMGII" accepted.
+2022-08-30 17:32:27.038 +01:00 [DBG] Connection id "0HMKAKKSSMGII" started.
+2022-08-30 17:32:27.058 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:32:27.058 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:32:27.114 +01:00 [DBG] Connection id "0HMKAKKSSMGIG" stopped.
+2022-08-30 17:32:27.114 +01:00 [DBG] Connection id "0HMKAKKSSMGIH" stopped.
+2022-08-30 17:32:27.117 +01:00 [DBG] Connection 0HMKAKKSSMGII established using the following protocol: "Tls12"
+2022-08-30 17:32:27.118 +01:00 [DBG] Connection id "0HMKAKKSSMGIG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:32:27.118 +01:00 [DBG] Connection id "0HMKAKKSSMGIH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:32:27.200 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:32:27.248 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:32:27.456 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:32:27.701 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:32:27.701 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:32:27.706 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:32:27.714 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 12.7932ms
+2022-08-30 17:32:27.714 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 519.2429ms
+2022-08-30 17:32:27.765 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.5289ms
+2022-08-30 17:32:27.904 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:32:28.157 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 253.3789ms
+2022-08-30 17:32:36.301 +01:00 [DBG] Connection id "0HMKAKKSSMGIJ" accepted.
+2022-08-30 17:32:36.302 +01:00 [DBG] Connection id "0HMKAKKSSMGIJ" received FIN.
+2022-08-30 17:32:36.303 +01:00 [DBG] Connection id "0HMKAKKSSMGIJ" started.
+2022-08-30 17:32:36.303 +01:00 [DBG] Connection id "0HMKAKKSSMGIK" accepted.
+2022-08-30 17:32:36.308 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:32:36.309 +01:00 [DBG] Connection id "0HMKAKKSSMGIK" started.
+2022-08-30 17:32:36.314 +01:00 [DBG] Connection id "0HMKAKKSSMGIJ" stopped.
+2022-08-30 17:32:36.317 +01:00 [DBG] Connection id "0HMKAKKSSMGIJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:32:36.321 +01:00 [DBG] Connection 0HMKAKKSSMGIK established using the following protocol: "Tls12"
+2022-08-30 17:32:36.335 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:32:36.340 +01:00 [DBG] DELETE requests are not supported
+2022-08-30 17:32:36.376 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:32:36.384 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:32:36.390 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:32:36.393 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:32:36.419 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:32:36.422 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:32:36.424 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:32:36.426 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:32:36.429 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:32:36.432 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:32:36.434 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:32:36.439 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:32:36.448 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:32:36.452 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:32:36.455 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:32:36.456 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:32:36.458 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:32:36.460 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:32:36.463 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:32:36.467 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:32:36.470 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:32:36.471 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:32:36.472 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:32:36.474 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:32:36.483 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:32:36.490 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 51.4836ms
+2022-08-30 17:32:36.493 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:32:36.498 +01:00 [DBG] Connection id "0HMKAKKSSMGIK" completed keep alive response.
+2022-08-30 17:32:36.500 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 164.4057ms
+2022-08-30 17:32:56.633 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:32:56.803 +01:00 [DBG] Hosting starting
+2022-08-30 17:32:56.992 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:32:57.073 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:32:57.076 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:32:57.077 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:32:57.078 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:32:57.080 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:32:57.082 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:32:57.084 +01:00 [INF] Hosting environment: Development
+2022-08-30 17:32:57.085 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:32:57.086 +01:00 [DBG] Hosting started
+2022-08-30 17:32:57.490 +01:00 [DBG] Connection id "0HMKAKL5V93UE" received FIN.
+2022-08-30 17:32:57.502 +01:00 [DBG] Connection id "0HMKAKL5V93UF" accepted.
+2022-08-30 17:32:57.502 +01:00 [DBG] Connection id "0HMKAKL5V93UE" accepted.
+2022-08-30 17:32:57.506 +01:00 [DBG] Connection id "0HMKAKL5V93UF" started.
+2022-08-30 17:32:57.509 +01:00 [DBG] Connection id "0HMKAKL5V93UE" started.
+2022-08-30 17:32:57.554 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:32:57.631 +01:00 [DBG] Connection id "0HMKAKL5V93UE" stopped.
+2022-08-30 17:32:57.633 +01:00 [DBG] Connection id "0HMKAKL5V93UE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:32:57.652 +01:00 [DBG] Connection 0HMKAKL5V93UF established using the following protocol: "Tls12"
+2022-08-30 17:32:57.739 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:32:57.781 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:32:57.940 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-08-30 17:32:58.199 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-08-30 17:32:58.203 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_vs/browserLink - -
+2022-08-30 17:32:58.203 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - -
+2022-08-30 17:32:58.208 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 200 - text/html;charset=utf-8 473.7532ms
+2022-08-30 17:32:58.215 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 12.8372ms
+2022-08-30 17:32:58.275 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.3689ms
+2022-08-30 17:32:58.491 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - -
+2022-08-30 17:32:58.821 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 330.1116ms
+2022-08-30 17:33:00.795 +01:00 [DBG] Connection id "0HMKAKL5V93UG" accepted.
+2022-08-30 17:33:00.796 +01:00 [DBG] Connection id "0HMKAKL5V93UG" received FIN.
+2022-08-30 17:33:00.798 +01:00 [DBG] Connection id "0HMKAKL5V93UG" started.
+2022-08-30 17:33:00.799 +01:00 [DBG] Connection id "0HMKAKL5V93UH" accepted.
+2022-08-30 17:33:00.803 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:33:00.804 +01:00 [DBG] Connection id "0HMKAKL5V93UH" started.
+2022-08-30 17:33:00.807 +01:00 [DBG] Connection id "0HMKAKL5V93UG" stopped.
+2022-08-30 17:33:00.809 +01:00 [DBG] Connection id "0HMKAKL5V93UG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:33:00.814 +01:00 [DBG] Connection 0HMKAKL5V93UH established using the following protocol: "Tls12"
+2022-08-30 17:33:00.827 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:33:00.832 +01:00 [DBG] DELETE requests are not supported
+2022-08-30 17:33:00.866 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:33:00.873 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:33:00.876 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:33:00.881 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:33:00.908 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:33:00.916 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:33:00.918 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:33:00.919 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:33:00.921 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:33:00.922 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:33:00.925 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:33:00.929 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:33:00.938 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:33:00.944 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:33:00.947 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:33:00.948 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:33:00.950 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:33:00.952 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:33:00.955 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:33:00.957 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:33:00.959 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:33:00.961 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:33:00.962 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:33:00.964 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:33:00.973 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:33:00.983 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 51.6667ms
+2022-08-30 17:33:00.987 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:33:00.989 +01:00 [DBG] Connection id "0HMKAKL5V93UH" completed keep alive response.
+2022-08-30 17:33:00.991 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 163.8689ms
+2022-08-30 17:39:06.636 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-08-30 17:39:06.718 +01:00 [DBG] Hosting starting
+2022-08-30 17:39:06.804 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 9ECE674776CFE5EF7887CF90075448056F8B6ECA)
+2022-08-30 17:39:06.859 +01:00 [INF] Now listening on: https://localhost:7230
+2022-08-30 17:39:06.861 +01:00 [INF] Now listening on: http://localhost:5230
+2022-08-30 17:39:06.862 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-08-30 17:39:06.863 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-08-30 17:39:06.865 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-08-30 17:39:06.866 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-30 17:39:06.867 +01:00 [INF] Hosting environment: Production
+2022-08-30 17:39:06.868 +01:00 [INF] Content root path: C:\Users\AX412BC\workspace\CityInfo\CityInfo.API\
+2022-08-30 17:39:06.868 +01:00 [DBG] Hosting started
+2022-08-30 17:39:06.965 +01:00 [DBG] Connection id "0HMKAKOK2RQSV" received FIN.
+2022-08-30 17:39:06.965 +01:00 [DBG] Connection id "0HMKAKOK2RQT0" received FIN.
+2022-08-30 17:39:06.974 +01:00 [DBG] Connection id "0HMKAKOK2RQSV" accepted.
+2022-08-30 17:39:06.974 +01:00 [DBG] Connection id "0HMKAKOK2RQT0" accepted.
+2022-08-30 17:39:06.976 +01:00 [DBG] Connection id "0HMKAKOK2RQSV" started.
+2022-08-30 17:39:06.977 +01:00 [DBG] Connection id "0HMKAKOK2RQT0" started.
+2022-08-30 17:39:06.999 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:39:06.999 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:39:07.024 +01:00 [DBG] Connection id "0HMKAKOK2RQT1" accepted.
+2022-08-30 17:39:07.041 +01:00 [DBG] Connection id "0HMKAKOK2RQT1" started.
+2022-08-30 17:39:07.042 +01:00 [DBG] Connection id "0HMKAKOK2RQSV" stopped.
+2022-08-30 17:39:07.042 +01:00 [DBG] Connection id "0HMKAKOK2RQT0" stopped.
+2022-08-30 17:39:07.044 +01:00 [DBG] Connection id "0HMKAKOK2RQSV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:39:07.044 +01:00 [DBG] Connection id "0HMKAKOK2RQT0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:39:07.089 +01:00 [DBG] Connection 0HMKAKOK2RQT1 established using the following protocol: "Tls12"
+2022-08-30 17:39:07.131 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7230/swagger/index.html - -
+2022-08-30 17:39:07.158 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-08-30 17:39:07.181 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-08-30 17:39:07.183 +01:00 [DBG] Request did not match any endpoints
+2022-08-30 17:39:07.201 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7230/swagger/index.html - - - 404 0 - 73.3921ms
+2022-08-30 17:39:12.353 +01:00 [DBG] Connection id "0HMKAKOK2RQT2" accepted.
+2022-08-30 17:39:12.354 +01:00 [DBG] Connection id "0HMKAKOK2RQT2" received FIN.
+2022-08-30 17:39:12.356 +01:00 [DBG] Connection id "0HMKAKOK2RQT2" started.
+2022-08-30 17:39:12.356 +01:00 [DBG] Connection id "0HMKAKOK2RQT3" accepted.
+2022-08-30 17:39:12.358 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-30 17:39:12.360 +01:00 [DBG] Connection id "0HMKAKOK2RQT3" started.
+2022-08-30 17:39:12.362 +01:00 [DBG] Connection id "0HMKAKOK2RQT2" stopped.
+2022-08-30 17:39:12.364 +01:00 [DBG] Connection id "0HMKAKOK2RQT2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-08-30 17:39:12.368 +01:00 [DBG] Connection 0HMKAKOK2RQT3 established using the following protocol: "Tls12"
+2022-08-30 17:39:12.379 +01:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - -
+2022-08-30 17:39:12.387 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:39:12.394 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)' with route pattern 'api/cities/{cityId}/pointsofinterest/{pointOfInterestId}' is valid for the request path '/api/cities/1/pointsofinterest/1'
+2022-08-30 17:39:12.397 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:39:12.399 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:39:12.438 +01:00 [INF] Route matched with {action = "DeletePointOfInterest", controller = "PointOfInterestDto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeletePointOfInterest(Int32, Int32) on controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API).
+2022-08-30 17:39:12.443 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-08-30 17:39:12.445 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-08-30 17:39:12.446 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-08-30 17:39:12.448 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-08-30 17:39:12.449 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-08-30 17:39:12.452 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:39:12.456 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.PointOfInterestDtoController (CityInfo.API)
+2022-08-30 17:39:12.464 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:39:12.469 +01:00 [DBG] Attempting to bind parameter 'cityId' of type 'System.Int32' using the name 'cityId' in request data ...
+2022-08-30 17:39:12.472 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:39:12.473 +01:00 [DBG] Done attempting to bind parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:39:12.475 +01:00 [DBG] Attempting to validate the bound parameter 'cityId' of type 'System.Int32' ...
+2022-08-30 17:39:12.477 +01:00 [DBG] Done attempting to validate the bound parameter 'cityId' of type 'System.Int32'.
+2022-08-30 17:39:12.479 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:39:12.481 +01:00 [DBG] Attempting to bind parameter 'pointOfInterestId' of type 'System.Int32' using the name 'pointOfInterestId' in request data ...
+2022-08-30 17:39:12.483 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:39:12.484 +01:00 [DBG] Done attempting to bind parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:39:12.487 +01:00 [DBG] Attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32' ...
+2022-08-30 17:39:12.489 +01:00 [DBG] Done attempting to validate the bound parameter 'pointOfInterestId' of type 'System.Int32'.
+2022-08-30 17:39:12.497 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-08-30 17:39:12.506 +01:00 [INF] Executed action CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API) in 48.4441ms
+2022-08-30 17:39:12.508 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.PointOfInterestDtoController.DeletePointOfInterest (CityInfo.API)'
+2022-08-30 17:39:12.510 +01:00 [DBG] Connection id "0HMKAKOK2RQT3" completed keep alive response.
+2022-08-30 17:39:12.513 +01:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7230/api/cities/1/pointsofinterest/1 - - - 204 - - 133.2718ms
