@@ -10,7 +10,8 @@ namespace CityInfo.API.Controllers
 {
     [ApiController]
     [Route("api/cities")]
-    [Authorize]
+    [ApiVersion("1.0")]
+    //[Authorize]
 
     public class CitiesController : ControllerBase
     {
